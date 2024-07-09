@@ -121,13 +121,26 @@ div {
 /* END OF ARTICLE SETTINGS */
 
 /* MEDIA QUERY */
-
-@media (max-width: 375px) {
+@media (min-width: 507px) and (max-width: 620px) {
+  .product-image {
+    width: 50%;
+  }
+  article-content {
+    width: 50%;
+  }
+}
+@media (max-width: 507px) {
   #main {
     margin: 1.5rem;
   }
+  li > * {
+    margin-bottom: 1.5rem;
+  }
   article {
     display: block;
+  }
+  .article-content {
+    padding: 1.5rem;
   }
   .product-image {
     display: none;
