@@ -5,6 +5,7 @@
 
 :root {
   --dark-cyan: hsl(158, 36%, 37%);
+  --dark-green: hsl(158, 47%, 20%);
   --cream: hsl(30, 38%, 92%);
   --very-dark-blue: hsl(212, 21%, 14%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
@@ -83,7 +84,9 @@ li {
 li > * {
   margin-bottom: 1.5rem;
 }
-
+a:hover {
+  background-color: var(--dark-green);
+}
 p {
   line-height: 1.5rem;
   color: var(--dark-grayish-blue);
