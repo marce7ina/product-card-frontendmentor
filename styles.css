@@ -1,0 +1,144 @@
+/* MAIN SETTINGS */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); /*weights: 500, 700*/
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"); /*weight: 700*/
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  margin: 10px;
+}
+/* END OF MAIN SETTINGS */
+
+/* ARTICLE SETTINGS */
+article {
+  width: 600px;
+  background-color: var(--white);
+  display: flex;
+  border-radius: 10px;
+}
+
+/* ARTICLE PHOTO */
+.product-image {
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+}
+.product-image-mobile {
+  display: none;
+}
+/* ARTICLE CONTENT */
+
+.article-content {
+  padding: 2rem;
+}
+
+.article-category {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--dark-grayish-blue);
+}
+
+.article-title {
+  font-size: 2.5rem;
+}
+
+.current-price,
+.article-title {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+}
+
+li {
+  list-style-type: none;
+}
+li > * {
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1.5rem;
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+}
+
+/* PRICE SECTION */
+
+.prices {
+  display: flex;
+}
+
+.current-price {
+  color: var(--dark-cyan);
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+.old-price {
+  text-decoration: line-through;
+}
+.cart {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem 0;
+  margin: 0;
+  border-radius: 7px;
+  font-weight: 700;
+}
+.cart-icon {
+  margin-right: 10px;
+}
+div {
+  border-radius: 10px;
+}
+/* END OF ARTICLE SETTINGS */
+
+/* MEDIA QUERY */
+
+@media (max-width: 375px) {
+  #main {
+    margin: 1.5rem;
+  }
+  article {
+    display: block;
+  }
+  .product-image {
+    display: none;
+  }
+  .product-image-mobile {
+    display: block;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .button-cart {
+    display: flex;
+    justify-content: space-between;
+  }
+}
