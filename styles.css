@@ -44,6 +44,7 @@ article {
 .product-image {
   width: 300px;
   border-radius: 10px 0 0 10px;
+  object-fit: cover;
 }
 .product-image-mobile {
   display: none;
@@ -52,6 +53,9 @@ article {
 
 .article-content {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .article-category {
@@ -63,7 +67,8 @@ article {
 }
 
 .article-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  padding-right: 2.5rem;
 }
 
 .current-price,
@@ -76,7 +81,7 @@ li {
   list-style-type: none;
 }
 li > * {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 p {
@@ -121,15 +126,15 @@ div {
 /* END OF ARTICLE SETTINGS */
 
 /* MEDIA QUERY */
-@media (min-width: 507px) and (max-width: 620px) {
+@media (min-width: 440px) and (max-width: 620px) {
   .product-image {
-    width: 50%;
+    width: 45%;
   }
   article-content {
-    width: 50%;
+    width: 55%;
   }
 }
-@media (max-width: 507px) {
+@media (max-width: 440px) {
   #main {
     margin: 1.5rem;
   }
